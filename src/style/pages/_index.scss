@@ -1,0 +1,22 @@
+
+.news{
+  background-color: #C0C0C0;
+  .news-list{
+    @include wrapper();
+    &:after{
+      content: "";
+      @include col-4();
+    }
+    .flex-row{
+      @include row-flex();
+      .item{
+        background: #ddd;
+        @include col();
+        @include col-4();
+        margin-bottom: 30px;
+        box-sizing: border-box;
+      }
+    }
+
+  }
+}

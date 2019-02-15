@@ -1,0 +1,33 @@
+html{
+  font-size: $font-size;
+  font-family: $font-open-sans;;
+  line-height: $base-line-height;
+}
+body {
+
+}
+
+main {
+   min-height: calc(100vh - (#{$footer-height} + #{$header-height}));
+}
+
+.left-sidebar{
+
+}
+.right-sidebar{
+
+}
+.content{
+
+}
+//if use grid system
+.wrapper{
+  @include wrapper();
+}
+.container{
+  max-width: $container-max-width;
+  min-width: $container-min-width;
+  margin: auto;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+}
